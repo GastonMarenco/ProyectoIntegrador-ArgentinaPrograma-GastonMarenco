@@ -1,0 +1,169 @@
+body {
+    margin: auto;
+    background-color: rgb(231, 231, 231);
+}
+
+.wrapper {
+    width: 100vw;
+    height: 4vw;
+    background-color: #191c32;
+    color: #fff;
+
+}
+
+.navbar {
+    display: flex;
+    justify-content: space-between;
+    padding: 1em;
+}
+
+.brand {
+    margin-top: -15px;
+}
+
+.brand span {
+    color: aqua;
+}
+
+.menu {
+    display: flex;
+    width: 25%;
+    justify-content: space-around;
+}
+
+.menu img {
+    width: 50px;
+    height: 50px;
+}
+
+.menu li {
+    list-style: none;
+}
+
+.menu a {
+    color: #fff;
+    text-decoration: none;
+    padding: 10px;
+}
+
+.menu button {
+    width: 80px;
+    height: 40px;
+    margin-top: 4px;
+    border-style: inset;
+    border-color: aqua;
+    background-color: #191c32;
+    color: aqua;
+    border-radius: 15px;
+    cursor: pointer;
+}
+
+.menu button:hover {
+    background-color: aqua;
+    color: #191c32;
+}
+
+.mat-card {
+    border-radius: 32px;
+    margin: 10px 10px;
+    padding: 20px;
+    border-color: #191c32;
+}
+
+.mat-card#first-card {
+    padding: 0;
+} 
+
+div#banner {
+    display: flex;
+}
+
+div#banner img {
+    width: 100%;
+    border-radius: 32px 32px 0 0;
+}
+
+.perfil {
+    border-radius: 50%;
+    width: 152px;
+    height: 152px;
+    margin-top: -110px;
+    margin-left: 15px;
+    z-index: 1;
+}
+
+#info-details {
+    background-color: #fff;
+    margin: 15px;
+    border-color: #191c32;
+    list-style: none;
+}
+
+#info-details h1 {
+    font-size: 1.8rem;
+    display: inline;
+    font-weight: 500;
+    line-height: 1.25;
+    word-wrap: break-word;
+    word-break: break-word;
+}
+
+.activo {
+    background-color: rgb(69, 140, 233);
+    border-style: none;
+    border-radius: 5px;
+    height: 40px;
+    width: 150px;
+    font-size: 110%;
+    color: #fff;
+    cursor: pointer; 
+}
+
+.activo2 {
+    border-style: none;
+    border-radius: 5px;
+    height: 40px;
+    width: 150px;
+    font-size: 105%;
+    color: black;
+    cursor: pointer; 
+}
+
+#info-data {
+    display: flex;
+    justify-content: space-between;
+}
+
+.logo {
+    width: 232px;
+    list-style: none;
+    flex-shrink: 0;
+}
+
+.logo li a {
+    color: rgb(38, 117, 221);
+    display: flex;
+    text-decoration: none;
+}
+
+.logo li a h2 {
+    font-size: 1rem;
+    font-weight: 500;
+    align-self: center;
+    vertical-align: baseline;
+}
+
+.logo img {
+    width: 85px;
+    height: 40px;
+    margin-right: 8px;
+}
+
+.btn-right {
+    float: right;
+    margin-top: -35px;
+}
+
+#perfil-info .btn-edit {
+    margin-right: 1680px;
+}
