@@ -8,6 +8,8 @@ import { AcercaDeComponent } from './componentes/acerca-de/acerca-de.component';
 import { ExpYEducComponent } from './componentes/exp-y-educ/exp-y-educ.component';
 import { HttpClientModule } from '@angular/common/http';
 import { SocialComponent } from './componentes/social/social.component';
+import { NgCircleProgressModule } from 'ng-circle-progress';
+import { HysComponent } from './componentes/hys/hys.component';
 
 @NgModule({
   declarations: [
@@ -16,11 +18,13 @@ import { SocialComponent } from './componentes/social/social.component';
     NavbarComponent,
     AcercaDeComponent,
     ExpYEducComponent,
-    SocialComponent
+    SocialComponent,
+    HysComponent
   ],
   imports: [
     BrowserModule,
-    HttpClientModule
+    HttpClientModule,
+    NgCircleProgressModule.forRoot({})
   ],
   providers: [],
   bootstrap: [AppComponent]
