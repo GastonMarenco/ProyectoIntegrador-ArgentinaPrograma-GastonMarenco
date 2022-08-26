@@ -1,0 +1,13 @@
+.wrapper {
+    background-color: #191c32;
+    color: #fff;
+}
+
+img{
+    width: 150px;
+}
+
+app-social {
+    float: right;
+}
+
