@@ -10,6 +10,7 @@ import { HttpClientModule } from '@angular/common/http';
 import { SocialComponent } from './componentes/social/social.component';
 import { NgCircleProgressModule } from 'ng-circle-progress';
 import { HysComponent } from './componentes/hys/hys.component';
+import { ProyectosComponent } from './componentes/proyectos/proyectos.component';
 
 @NgModule({
   declarations: [
@@ -19,7 +20,8 @@ import { HysComponent } from './componentes/hys/hys.component';
     AcercaDeComponent,
     ExpYEducComponent,
     SocialComponent,
-    HysComponent
+    HysComponent,
+    ProyectosComponent
   ],
   imports: [
     BrowserModule,

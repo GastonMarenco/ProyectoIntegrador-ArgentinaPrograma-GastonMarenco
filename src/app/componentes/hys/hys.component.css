@@ -1,4 +1,10 @@
-title {
-    justify-content: center;
+div {
+    display: inline-block;
+    margin: 50px;
+    margin-left: 80px;
 }
 
+#hys {
+    display: block;
+    margin: 10px 10px;
+}
