@@ -11,6 +11,7 @@ import { SocialComponent } from './componentes/social/social.component';
 import { NgCircleProgressModule } from 'ng-circle-progress';
 import { HysComponent } from './componentes/hys/hys.component';
 import { ProyectosComponent } from './componentes/proyectos/proyectos.component';
+import { FooterComponent } from './componentes/footer/footer.component';
 
 @NgModule({
   declarations: [
@@ -21,7 +22,8 @@ import { ProyectosComponent } from './componentes/proyectos/proyectos.component'
     ExpYEducComponent,
     SocialComponent,
     HysComponent,
-    ProyectosComponent
+    ProyectosComponent,
+    FooterComponent
   ],
   imports: [
     BrowserModule,

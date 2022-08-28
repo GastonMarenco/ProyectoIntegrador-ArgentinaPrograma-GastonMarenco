@@ -6,3 +6,10 @@ img {
 .socialMedia {
     margin: 15px;
 }
+
+button {
+    margin-left: 10px;
+    width: 80px;
+    border-width: medium;
+    border-radius: 9px;
+}
