@@ -1,35 +1,59 @@
 <div class="card mat-card">
+
+    <!--Experiencia-->
+
     <div class="card-titles">
         <h2>Experiencia</h2>
-        <div class="btn-edit" onclick="cambiar_parrafo()"> 
-            <a href="#" class="btn-right">
-                <i class="fa fa-pen"></i>
+
+        <div class="btn-edit"> 
+            <a href="" class="btn-right" routerLink="/nuevaexp" *ngIf="isLogged">
+                <i class="fa-sharp fa-solid fa-plus"></i>
             </a>
         </div>
     </div>
-    <div>
-        <p id="text-acercade">Lorem ipsum dolor sit amet consectetur adipisicing elit. Ex, ipsam dolores inventore ea reiciendis, eligendi quae quasi dignissimos beatae iusto nobis aperiam animi natus. Necessitatibus fugiat doloribus suscipit sed sunt.</p>
-    </div>
-    <div>
-        <input id="edit-acercade" type="text" oninput="myFunction2(this.value)" style="display: none;">
-        <input type="file" id="file1" onchange="showFile(this)">
-    </div>
+
+    <div style="padding: 5px;"></div>
+
+    <table class="table">
+        <tbody>
+            <tr *ngFor="let Experiencia of expe">
+                <td><h5>{{Experiencia.nombreE}}</h5></td>
+                <td>{{Experiencia.descripcionE}}</td>
+                <td>
+                    <a href="" class="btn-right" (click)="delete(Experiencia.id)" *ngIf="isLogged"><i class="fa-solid fa-trash-can"></i></a>
+                    <a href="" class="btn-right" routerLink="/editexp/{{Experiencia.id}}" *ngIf="isLogged"><i class="fa fa-pen"></i></a>
+                </td>
+            </tr>
+        </tbody>
+    </table>
 
     <div style="padding: 16px;"></div>
 
+    <!--Educación-->
+
     <div class="card-titles">
         <h2>Educación</h2>
-        <div class="btn-edit" onclick="cambiar_parrafo()"> 
-            <a href="#" class="btn-right">
-                <i class="fa fa-pen"></i>
+
+        <div class="btn-edit"> 
+            <a href="" class="btn-right" routerLink="/nuevaeduc" *ngIf="isLogged">
+                <i class="fa-sharp fa-solid fa-plus"></i>
             </a>
         </div>
     </div>
-    <div>
-        <p id="text-acercade">Lorem ipsum dolor sit, amet consectetur adipisicing elit. Magnam earum est adipisci soluta assumenda dicta, mollitia commodi distinctio voluptate aspernatur tempore, porro iusto! Aperiam recusandae repellendus consequuntur nesciunt dolores animi?</p>
-    </div>
-    <div>
-        <input id="edit-acercade" type="text" oninput="myFunction2(this.value)" style="display: none;">
-        <input type="file" id="file1" onchange="showFile(this)">
-    </div>
+
+    <div style="padding: 5px;"></div>
+
+    <table class="table">
+        <tbody>
+            <tr *ngFor="let Educacion of educ">
+                <td><h5>{{Educacion.nombreE}}</h5></td>
+                <td>{{Educacion.descripcionE}}</td>
+                <td>
+                    <a href="" class="btn-right" (click)="deleteE(Educacion.id)" *ngIf="isLogged"><i class="fa-solid fa-trash-can"></i></a>
+                    <a href="" class="btn-right" routerLink="/editeduc/{{Educacion.id}}" *ngIf="isLogged"><i class="fa fa-pen"></i></a>
+                </td>
+            </tr>
+        </tbody>
+    </table>
+
 </div>
