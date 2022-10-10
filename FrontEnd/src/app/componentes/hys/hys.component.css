@@ -1,10 +1,15 @@
-div {
+#hys {
+    display: block;
+}
+
+.circulo {
     display: inline-block;
     margin: 50px;
     margin-left: 80px;
 }
 
-#hys {
-    display: block;
-    margin: 10px 10px;
+.botonesS {
+    display: flex;
+    align-items: center;
+    justify-content: center;
 }
