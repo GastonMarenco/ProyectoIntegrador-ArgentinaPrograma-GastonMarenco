@@ -22,7 +22,7 @@ import lombok.Setter;
 public class Persona {
     @Id
     @GeneratedValue(strategy = GenerationType.IDENTITY)
-    private Long id; 
+    private int id; 
     
     @NotNull
     @Size(min = 1, max = 50, message = "Caracteres minimos 1, maximos 50")
@@ -32,6 +32,8 @@ public class Persona {
     @Size(min = 1, max = 50, message = "Caracteres minimos 1, maximos 50")
     private String apellido;
     
-    @Size(min = 1, max = 50, message = "Caracteres minimos 1, maximos 50")
+    @NotNull
+    private String descripcion;
+    
     private String img;
 }

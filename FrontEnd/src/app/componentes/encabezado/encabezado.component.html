@@ -5,13 +5,13 @@
     <div id="info" style="padding: 16px;"></div>
 
     <div id="perfil-info">
-        <img class="perfil" src="https://cdn.pixabay.com/photo/2018/04/23/00/33/nature-3342901__340.jpg" alt="">
+        <img class="perfil" src={{persona.img}} alt="">
     </div>
 
     <div id="info-data">
         <div id="info-details">
             <h1>{{persona.nombre}} {{persona.apellido}}</h1>
-            <div class="btn-edit"><a href="#" class="btn-right"><i class="fa fa-pen"></i></a></div>
+            <a href="" class="btn-right" routerLink="/editpersona/1" *ngIf="isLogged"><i class="fa fa-pen"></i></a>
                  
             <div>Programador web full stack Jr</div>
             <div>
