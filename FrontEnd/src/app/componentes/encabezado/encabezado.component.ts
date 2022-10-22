@@ -15,7 +15,7 @@ export class EncabezadoComponent implements OnInit {
   isLogged = false;
 
   ngOnInit(): void {
-    this.cargarPersona;
+    this.cargarPersona();
     if(this.tokenService.getToken()){
       this.isLogged = true;
     } else{
@@ -24,6 +24,8 @@ export class EncabezadoComponent implements OnInit {
   }
 
   cargarPersona(){
-    this.personaService.detail(1).subscribe(data =>{this.persona = data})
+    this.personaService.detail(1).subscribe(data =>
+        {this.persona = data}
+      )
   }
 }

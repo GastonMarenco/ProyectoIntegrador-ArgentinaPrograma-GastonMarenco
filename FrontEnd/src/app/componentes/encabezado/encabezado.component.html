@@ -1,11 +1,11 @@
 <div class="card mat-card" id="first-card">
 
-    <div id="banner"><img src="https://cdn.pixabay.com/photo/2018/09/27/09/22/artificial-intelligence-3706562__340.jpg" alt=""></div>
+    <div id="banner"><img src="https://cdn.pixabay.com/photo/2018/09/27/09/22/artificial-intelligence-3706562__340.jpg"></div>
 
     <div id="info" style="padding: 16px;"></div>
 
     <div id="perfil-info">
-        <img class="perfil" src={{persona.img}} alt="">
+        <img class="perfil" src={{persona.img}}>
     </div>
 
     <div id="info-data">
@@ -13,7 +13,7 @@
             <h1>{{persona.nombre}} {{persona.apellido}}</h1>
             <a href="" class="btn-right" routerLink="/editpersona/1" *ngIf="isLogged"><i class="fa fa-pen"></i></a>
                  
-            <div>Programador web full stack Jr</div>
+            <div>{{persona.descripcion}}</div>
             <div>
                 <span>San Rafael Mendoza (Argentina)</span> 
                 <span><a href="#">Información de contacto</a></span>
@@ -25,8 +25,8 @@
         </div>
 
         <ul class="logo">
-            <li><a href="#"><img src="https://upload.wikimedia.org/wikipedia/commons/thumb/3/3d/Conicet_Logo_con_letras.png/640px-Conicet_Logo_con_letras.png" alt=""><h2>CONICET</h2></a></li>
-            <li><a href="#"><img src="https://mumuki.io/logo-alt-large.png" alt=""><h2>MUMUKI</h2></a></li>
+            <li><a href="#"><img src="https://upload.wikimedia.org/wikipedia/commons/thumb/3/3d/Conicet_Logo_con_letras.png/640px-Conicet_Logo_con_letras.png"><h2>CONICET</h2></a></li>
+            <li><a href="#"><img src="https://mumuki.io/logo-alt-large.png"><h2>MUMUKI</h2></a></li>
         </ul>   
     </div>
 </div>

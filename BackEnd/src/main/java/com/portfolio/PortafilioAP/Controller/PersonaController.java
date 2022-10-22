@@ -39,6 +39,15 @@ public class PersonaController {
         return new ResponseEntity(list, HttpStatus.OK);
     }
     
+     @GetMapping("/detail/{id}")
+    public ResponseEntity<Persona> getById(@PathVariable("id") int id) {
+        if (!personaService.existsById(id)) {
+            return new ResponseEntity(new Mensaje("No existe el ID"), HttpStatus.BAD_REQUEST);
+        }
+        Persona persona = personaService.getOne(id).get();
+        return new ResponseEntity(persona, HttpStatus.OK);
+    }
+    
     @PutMapping("/update/{id}")
     public ResponseEntity<?> update(@PathVariable("id") int id, @RequestBody dtoPersona dtopersona) {
         //Valida si existe el ID
@@ -55,21 +64,14 @@ public class PersonaController {
         }
         
         Persona persona = personaService.getOne(id).get();
+        
         persona.setNombre(dtopersona.getNombre());
         persona.setApellido(dtopersona.getApellido());
         persona.setDescripcion(dtopersona.getDescripcion());
         persona.setImg(dtopersona.getImg());
         
         personaService.save(persona);
+        
         return new ResponseEntity(new Mensaje("Persona actualizada"), HttpStatus.OK);
-    }
-    
-    @GetMapping("/detail/{id}")
-    public ResponseEntity<Persona> getById(@PathVariable("id") int id) {
-        if (!personaService.existsById(id)) {
-            return new ResponseEntity(new Mensaje("No existe el ID"), HttpStatus.NOT_FOUND);
-        }
-        Persona persona = personaService.getOne(id).get();
-        return new ResponseEntity(persona, HttpStatus.OK);
     }
 }
