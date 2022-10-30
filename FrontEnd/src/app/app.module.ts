@@ -3,7 +3,6 @@ import { BrowserModule } from '@angular/platform-browser';
 import { AppComponent } from './app.component';
 import { EncabezadoComponent } from './componentes/encabezado/encabezado.component';
 import { NavbarComponent } from './componentes/navbar/navbar.component';
-import { AcercaDeComponent } from './componentes/acerca-de/acerca-de.component';
 import { ExpYEducComponent } from './componentes/exp-y-educ/exp-y-educ.component';
 import { HttpClientModule } from '@angular/common/http';
 import { SocialComponent } from './componentes/social/social.component';
@@ -27,13 +26,14 @@ import { EditEncabezadoComponent } from './componentes/encabezado/edit-encabezad
 import { initializeApp,provideFirebaseApp } from '@angular/fire/app';
 import { environment } from '../environments/environment';
 import { provideStorage,getStorage } from '@angular/fire/storage';
+import { EditProyectosComponent } from './componentes/proyectos/edit-proyectos.component';
+import { NewProyectosComponent } from './componentes/proyectos/new-proyectos.component';
 
 @NgModule({
   declarations: [
     AppComponent,
     EncabezadoComponent,
     NavbarComponent,
-    AcercaDeComponent,
     ExpYEducComponent,
     SocialComponent,
     HysComponent,
@@ -47,7 +47,9 @@ import { provideStorage,getStorage } from '@angular/fire/storage';
     EditEducacionComponent,
     EditSkillComponent,
     NewSkillComponent,
-    EditEncabezadoComponent
+    EditEncabezadoComponent,
+    EditProyectosComponent,
+    NewProyectosComponent
   ],
   imports: [
     BrowserModule,

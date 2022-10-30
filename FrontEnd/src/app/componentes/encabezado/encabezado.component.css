@@ -94,3 +94,13 @@ div#banner img {
     height: 40px;
     margin-right: 8px;
 }
+
+h3 {
+    display: flex;
+    justify-content: space-around;
+}
+
+.infocont {
+    display: flex;
+    flex-direction: column;
+}

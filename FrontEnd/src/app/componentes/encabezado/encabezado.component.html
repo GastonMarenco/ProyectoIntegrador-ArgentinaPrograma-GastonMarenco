@@ -12,21 +12,31 @@
         <div id="info-details">
             <h1>{{persona.nombre}} {{persona.apellido}}</h1>
             <a href="" class="btn-right" routerLink="/editpersona/1" *ngIf="isLogged"><i class="fa fa-pen"></i></a>
-                 
-            <div>{{persona.descripcion}}</div>
-            <div>
-                <span>San Rafael Mendoza (Argentina)</span> 
-                <span><a href="#">Información de contacto</a></span>
+                
+            <div class="infocont">
+                <span>Programador web full stack Jr</span> 
+                <span>San Rafael Mendoza (Argentina)</span>
+                <span><b><u>Información de contacto:</u></b></span>
+                <span>Email: gastonmarenco32@gmail.com</span>
             </div>
-            
+
+            <!-- 
             <button class="activo">Tengo interés en</button>
             <button class="activo2">Añadir sección</button>
             <button class="activo2">Más</button> 
+            -->
+        </div> 
+
+        <div>
+            <h3>Acerca de mí</h3>
+            <p>{{persona.descripcion}}</p>
         </div>
 
         <ul class="logo">
-            <li><a href="#"><img src="https://upload.wikimedia.org/wikipedia/commons/thumb/3/3d/Conicet_Logo_con_letras.png/640px-Conicet_Logo_con_letras.png"><h2>CONICET</h2></a></li>
-            <li><a href="#"><img src="https://mumuki.io/logo-alt-large.png"><h2>MUMUKI</h2></a></li>
+            <li><a href="https://www.conicet.gov.ar/"><img src="https://upload.wikimedia.org/wikipedia/commons/thumb/3/3d/Conicet_Logo_con_letras.png/640px-Conicet_Logo_con_letras.png"><h2>CONICET</h2></a></li>
+            <li><a href="https://mumuki.io/home/"><img src="https://mumuki.io/logo-alt-large.png"><h2>MUMUKI</h2></a></li>
         </ul>   
     </div>
+
+    <div style="padding: 5px"></div>
 </div>
