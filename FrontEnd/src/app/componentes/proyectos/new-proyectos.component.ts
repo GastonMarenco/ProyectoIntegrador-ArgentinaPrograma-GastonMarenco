@@ -14,7 +14,7 @@ export class NewProyectosComponent implements OnInit {
   constructor(private sProyectos: ProyectosService, private router: Router, private activatedRouter: ActivatedRoute, public imageService: ImageService) { }
   nombre: string = '';
   descripcion: string = '';
-  img: string = '';
+  img: string = null;
 
   ngOnInit(): void {
   }

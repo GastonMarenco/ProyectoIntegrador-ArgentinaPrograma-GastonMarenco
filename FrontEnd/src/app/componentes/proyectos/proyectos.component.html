@@ -16,7 +16,7 @@
             <p>{{proyectos.descripcion}}</p>
         </div>
     
-        <div>
+        <div *ngIf="proyectos.img !== null">
             <img src={{proyectos.img}}>
         </div>
 

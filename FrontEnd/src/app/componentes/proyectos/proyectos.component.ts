@@ -27,6 +27,7 @@ export class ProyectosComponent implements OnInit {
   cargarProyectos(): void{
     this.sProyectos.lista().subscribe(data => {this.proyectos = data;})}
 
+
   delete(id: number){
     if(id != undefined){
       this.sProyectos.delete(id).subscribe(
