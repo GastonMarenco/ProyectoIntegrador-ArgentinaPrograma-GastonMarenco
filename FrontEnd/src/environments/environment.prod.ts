@@ -9,5 +9,5 @@ export const environment = {
     messagingSenderId: '1059902260744',
   },
   production: true,
-  URL: 'https://backend-ap-gm.herokuapp.com/'
+  URL: 'proyectointegrador-argentinaprograma-gastonmarenco.portfolio.koyeb'
 };
