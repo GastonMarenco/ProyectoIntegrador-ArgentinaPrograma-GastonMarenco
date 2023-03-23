@@ -9,5 +9,5 @@ export const environment = {
     messagingSenderId: '1059902260744',
   },
   production: true,
-  URL: 'comparable-claresta-gastonmarenco.koyeb.app/'
+  URL: 'https://portafilioap-gm.onrender.com'
 };
